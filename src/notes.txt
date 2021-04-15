@@ -1,0 +1,3 @@
+TODO:
+
+1 - Show Title, Rating & Runtime on thumb hover
