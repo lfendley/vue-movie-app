@@ -54,7 +54,7 @@ export default {
 
     onBeforeMount(() => {
       fetch(
-        `http://omdbapi.com/?apikey=${env.apikey}&i=${route.params.id}&plot=full`
+        `https://omdbapi.com/?apikey=${env.apikey}&i=${route.params.id}&plot=full`
       )
         .then((response) => response.json())
         .then((data) => {

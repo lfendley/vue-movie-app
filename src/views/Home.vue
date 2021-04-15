@@ -53,7 +53,7 @@ export default {
 
     const searchMovies = () => {
       if (search.value != "") {
-        fetch(`http://www.omdbapi.com/?apikey=${env.apikey}&s=${search.value}`)
+        fetch(`https://www.omdbapi.com/?apikey=${env.apikey}&s=${search.value}`)
           .then((response) => response.json())
           .then((data) => {
             console.log(data.Search);
@@ -68,7 +68,7 @@ export default {
 
     // Populate homepage movies by IIFE
     (function () {
-      fetch(`http://www.omdbapi.com/?apikey=${env.apikey}&s=jason`)
+      fetch(`https://www.omdbapi.com/?apikey=${env.apikey}&s=jason`)
         .then((response) => response.json())
         .then((data) => {
           movies.value = data.Search;
