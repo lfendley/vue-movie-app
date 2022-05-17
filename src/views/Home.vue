@@ -72,7 +72,6 @@ export default {
         .then((response) => response.json())
         .then((data) => {
           movies.value = data.Search;
-          console.log(movies.value);
         });
     })();
 
